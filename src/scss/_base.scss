@@ -29,11 +29,14 @@
 }
 
 .section-header__title {
-  max-width: 940px;
   margin: 0 auto;
   font-size: 52px;
   text-align: center;
   line-height: 100%;
+
+  span {
+    color: var(--primary-color);
+  }
 
   @media (max-width: $breakpoint992) {
     font-size: 40px;

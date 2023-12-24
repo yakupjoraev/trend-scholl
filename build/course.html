@@ -2,25 +2,623 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
-    <!-- Header -->
-    
+  <!-- Header -->
+  <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo___link" href="#">
+            <img src="./img/header/header-logo.svg" alt="logo">
+          </a>
+        </div>
 
-    <!-- Main Page -->
-    <main></main>
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О школе</a></li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Курсы</a>
 
-    <!-- Footer -->
-    
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Трикотаж</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шелк</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Велюр</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Хлопок</a></li>
+            </ul>
+          </li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Мастер-класы</a>
+
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Крой</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шитье</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Оверлок</a></li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__item--logo">
+            <a href="#" class="menu__item-link" data-scroll>
+              <img src="./img/header/header-logo.svg" alt="logo">
+            </a>
+          </li>
+
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Отзывы</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>FAQ</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Записаться</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Page -->
+  <main>
+    <section class="hero" style="background-image: url('./img/hero/hero-bg-2.png');">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__info">
+        <h2 class="hero__subtitle">Курс "ТРИКОТАЖ"</h2>
+        <h1 class="hero__title hero__title--bold">
+          Хотите научиться шить одежду, которая<br>
+          идеально сядет на вас и освоить новое,<br>
+          интересное хобби?
+        </h1>
+
+        <p class="hero__text">
+          За 3 месяца вы создадите 3 изделия по своим меркам с нуля, даже<br>
+          если никогда не шили одежду и у вас нет швейной машинки
+        </p>
+
+        <div class="hero__links">
+          <a class="hero__link primary-btn" href="#">Записаться на вводный урок</a>
+          <a class="hero__link secondary-btn" href="#">Смотреть программу</a>
+        </div>
+      </div>
+
+      <ul class="hero__socials">
+        <li class="hero__social">
+          <a class="hero__social-link" target="_blank" href="#">
+            <img src="./img/icons/instagram-grey.svg" alt="instagram">
+          </a>
+        </li>
+
+        <li class="hero__social">
+          <a class="hero__social-link" target="_blank" href="#">
+            <img src="./img/icons/vk-grey.svg" alt="vk">
+          </a>
+        </li>
+
+        <li class="hero__social">
+          <a class="hero__social-link" target="_blank" href="#">
+            <img src="./img/icons/telegram-grey.svg" alt="telegram">
+          </a>
+        </li>
+
+        <li class="hero__social">
+          <a class="hero__social-link" target="_blank" href="#">
+            <img src="./img/icons/whatsapp-grey.svg" alt="whatsapp">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="section benefits">
+  <div class="container">
+    <div class="benefits__inner">
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <img src="./img/benefits/benefits-1.svg" alt="benefits pic">
+
+          <p>
+            <b>Ближайший старт:</b><br>
+            11 сентября
+          </p>
+        </li>
+
+        <li class="benefits__item">
+          <img src="./img/benefits/benefits-2.svg" alt="benefits pic">
+
+          <p>
+            <b>Продолжительность:</b><br>
+            55 часов, 11 занятий,<br>
+            3 месяца
+          </p>
+        </li>
+
+        <li class="benefits__item">
+          <img src="./img/benefits/benefits-3.svg" alt="benefits pic">
+
+          <p>
+            <b> Группа:</b><br>
+            до 8 человек
+          </p>
+        </li>
+
+        <li class="benefits__item">
+          <img src="./img/benefits/benefits-4.svg" alt="benefits pic">
+
+          <p>
+            <b>Уровень подготовки:</b><br>
+            Любой
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="section practic">
+  <div class="container">
+    <div class="practic__inner">
+      <div class="practic__header section-header">
+        <div class="section-header__picture">
+          <img src="./img/section-decor/practic-decor.svg" alt="practic decor pic">
+        </div>
+
+        <h3 class="section-header__title">
+          Вы создадите <span>СВОЙ УНИКАЛЬНЫЙ ОБРАЗ</span> и получите<br>
+          первые навыки для создания базового гардероба
+        </h3>
+
+        <p class="section-header__descr">
+          ВМЕСТЕ С TREND SCHOOL
+        </p>
+      </div>
+
+      <ul class="practic__list">
+        <li class="practic__item" style="background-image: url('./img/practic/practic-1.jpg');">
+          <div class="practic__item-body">
+            <div class="practic__item-pic">
+              <img src="./img/practic/practic-decor-1.svg" alt="practic decor pic">
+            </div>
+
+            <div class="practic__item-footer">
+              <h4>Все обучение<br>
+                строится на практике</h4>
+              <p>В процессе обучения вы сможете отработать каждый этап конструирования одежды: начиная с подбора ткани и
+                фурнитуры, заканчивая пошивом и обработкой.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="practic__item practic__item--long-pic" style="background-image: url('./img/practic/practic-2.jpg');">
+          <div class="practic__item-body">
+            <div class="practic__item-pic">
+              <img src="./img/practic/practic-decor-2.svg" alt="practic decor pic">
+            </div>
+
+            <div class="practic__item-footer">
+              <h4>Небольшие<br>
+                группы 3-6 человек</h4>
+              <p>Такой подход позволяет преподавателю давать качественную обратную связь каждому ученику. Тогда обучение
+                становится эффективнее и быстрее</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="practic__item practic__item--long-pic" style="background-image: url('./img/practic/practic-3.jpg');">
+          <div class="practic__item-body">
+            <div class="practic__item-pic">
+              <img src="./img/practic/practic-decor-3.svg" alt="practic decor pic">
+            </div>
+
+            <div class="practic__item-footer">
+              <h4>Профессиональное<br>
+                оборудование в классах</h4>
+              <p>Вам не нужно тратить время и деньги на поиск, подбор и покупку оборудования, вы пользуетесь нашим</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="section works">
+  <div class="container">
+    <div class="works__inner">
+      <div class="works__header section-header">
+        <div class="section-header__picture">
+          <img src="./img/section-decor/works-decor.svg" alt="works decor pic">
+        </div>
+
+        <h3 class="section-header__title">Работы выпускниц</h3>
+        <p class="section-header__descr">
+          Обзор профессиональных достижений и творческих свершений выпуснкиц,<br> успешно завершивших обучение
+        </p>
+      </div>
+
+      <ul class="works__list">
+        <li class="works__item works__item--column-3 works__item--row-2"><img src="./img/works/works-1.jpg"
+            alt="work pic"></li>
+        <li class="works__item works__item--column-2 works__item--row-1"><img src="./img/works/works-2.jpg"
+            alt="work pic"></li>
+        <li class="works__item works__item--column-1 works__item--row-1"><img src="./img/works/works-3.jpg"
+            alt="work pic"></li>
+        <li class="works__item works__item--column-3 works__item--row-1"><img src="./img/works/works-4.jpg"
+            alt="work pic"></li>
+        <li class="works__item works__item--column-4 works__item--row-2"><img src="./img/works/works-5.jpg"
+            alt="work pic"></li>
+        <li class="works__item works__item--column-2 works__item--row-2"><img src="./img/works/works-6.jpg"
+            alt="work pic"></li>
+      </ul>
+
+      <a class="works__btn secondary-btn" href="#">ВСЕ РАБОТЫ</a>
+    </div>
+  </div>
+</section>
+    <section class="section prices">
+  <div class="container">
+    <div class="prices__inner">
+      <div class="prices__header section-header">
+        <div class="section-header__picture">
+          <img src="./img/section-decor/prices-decor.svg" alt="prices decor pic">
+        </div>
+
+        <h3 class="section-header__title">Программы и мастер-классы</h3>
+      </div>
+
+
+      <div class="prices__list-container">
+        <ul class="prices__list">
+          <li class="prices__item price-card">
+            <div class="price-card__discont">
+              <span>СКИДКА 40%</span>
+            </div>
+
+            <div class="price-card__header">
+              <h4 class="price-card__title">
+                Курс<br>
+                <span>"ТРИКОТАЖ"</span>
+              </h4>
+
+              <div class="price-card__header-items">
+                <div class="price-card__header-item">
+                  <img class="price-card__pic" src="./img/prices/prices-label-1.svg" alt="calendar pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">Старт: </p>
+                    <p class="price-card__header-text">3 августа</p>
+                  </div>
+                </div>
+
+                <div class="price-card__header-item">
+                  <img class="price-card__pic" src="./img/prices/prices-label-2.svg" alt="clock pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">35 часов: </p>
+                    <p class="price-card__header-text">(7 занятий / 2 месяца)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-card__price">
+              <div class="price-card__sum"> 1 600 <span>руб/мес</span></div>
+
+              <i class="price-card__descr">
+                Беспроцентная рассрочка
+              </i>
+
+              <p class="price-card__descr">
+                Или 12 000 руб. при полной оплате
+              </p>
+            </div>
+
+            <div class="price-card__points">
+              <p class="price-card__points-label">Конструируем, моделируем и<br>
+                шьём 3-4 изделия:
+              </p>
+
+              <ul class="price-card__points-list">
+                <li class="price-card__points-item">Футболку</li>
+                <li class="price-card__points-item">Свитшот / Худи</li>
+                <li class="price-card__points-item"> Спортивные брюки / Шорты</li>
+                <li class="price-card__points-item">Платье-лапша / Платье-фуболка</li>
+              </ul>
+            </div>
+
+            <div class="price-card__footer">
+              <p class="price-card__footer-label">Идеально для тех, кто хочет попробовать</p>
+
+              <a class="price-card__btn primary-btn" href="#">Подробности и расписание</a>
+            </div>
+          </li>
+
+          <li class="prices__item prices__item--margin price-card">
+            <div class="price-card__discont">
+              <span>СКИДКА 40%</span>
+            </div>
+
+            <div class="price-card__header">
+              <h4 class="price-card__title">
+                Курс<br>
+                <span>"ТРИКОТАЖ"</span>
+              </h4>
+
+              <div class="price-card__header-items">
+                <div class="price-card__header-item">
+                  <img class="prices__item-pic" src="./img/prices/prices-label-1.svg" alt="calendar pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">Старт: </p>
+                    <p class="price-card__header-text">3 августа</p>
+                  </div>
+                </div>
+
+                <div class="price-card__header-item">
+                  <img class="prices__item-pic" src="./img/prices/prices-label-2.svg" alt="clock pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">35 часов: </p>
+                    <p class="price-card__header-text">(7 занятий / 2 месяца)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-card__price">
+              <div class="price-card__sum"> 1 600 <span>руб/мес</span></div>
+
+              <i class="price-card__descr">
+                Беспроцентная рассрочка
+              </i>
+
+              <p class="price-card__descr">
+                Или 12 000 руб. при полной оплате
+              </p>
+            </div>
+
+            <div class="price-card__points">
+              <p class="price-card__points-label">Конструируем, моделируем и<br>
+                шьём 3-4 изделия:
+              </p>
+
+              <ul class="price-card__points-list">
+                <li class="price-card__points-item">Футболку</li>
+                <li class="price-card__points-item">Свитшот / Худи</li>
+                <li class="price-card__points-item"> Спортивные брюки / Шорты</li>
+                <li class="price-card__points-item">Платье-лапша / Платье-фуболка</li>
+              </ul>
+            </div>
+
+            <div class="price-card__footer">
+              <p class="price-card__footer-label">Идеально для тех, кто хочет попробовать</p>
+
+              <a class="price-card__btn primary-btn" href="#">Подробности и расписание</a>
+            </div>
+          </li>
+
+          <li class="prices__item price-card">
+            <div class="price-card__discont">
+              <span>СКИДКА 40%</span>
+            </div>
+
+            <div class="price-card__header">
+              <h4 class="price-card__title">
+                Курс<br>
+                <span>"ТРИКОТАЖ"</span>
+              </h4>
+
+              <div class="price-card__header-items">
+                <div class="price-card__header-item">
+                  <img class="prices__item-pic" src="./img/prices/prices-label-1.svg" alt="calendar pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">Старт: </p>
+                    <p class="price-card__header-text">3 августа</p>
+                  </div>
+                </div>
+
+                <div class="price-card__header-item">
+                  <img class="prices__item-pic" src="./img/prices/prices-label-2.svg" alt="clock pic">
+
+                  <div class="price-card__header-texts">
+                    <p class="price-card__header-text">35 часов: </p>
+                    <p class="price-card__header-text">(7 занятий / 2 месяца)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-card__price">
+              <div class="price-card__sum"> 1 600 <span>руб/мес</span></div>
+
+              <i class="price-card__descr">
+                Беспроцентная рассрочка
+              </i>
+
+              <p class="price-card__descr">
+                Или 12 000 руб. при полной оплате
+              </p>
+            </div>
+
+            <div class="price-card__points">
+              <p class="price-card__points-label">Конструируем, моделируем и<br>
+                шьём 3-4 изделия:
+              </p>
+
+              <ul class="price-card__points-list">
+                <li class="price-card__points-item">Футболку</li>
+                <li class="price-card__points-item">Свитшот / Худи</li>
+                <li class="price-card__points-item"> Спортивные брюки / Шорты</li>
+                <li class="price-card__points-item">Платье-лапша / Платье-фуболка</li>
+              </ul>
+            </div>
+
+            <div class="price-card__footer">
+              <p class="price-card__footer-label">Идеально для тех, кто хочет попробовать</p>
+
+              <a class="price-card__btn primary-btn" href="#">Подробности и расписание</a>
+            </div>
+          </li>
+        </ul>
+
+        <a class="prices__btn secondary-btn" href="#">ВСЕ КУРСЫ</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section callback">
+  <div class="callback__container">
+    <div class="callback__inner">
+      <div class="callback__decor">
+        <img src="./img/callback/callback-decor-1.svg" alt="callback decor pic">
+      </div>
+
+      <div class="callback__form-wrapper">
+        <form action="#" class="callback__from form">
+          <h3 class="form__title">
+            Задайте вопрос или<br>
+            свяжетесь с нами
+          </h3>
+
+          <p class="form__descr">
+            Заполните форму связи, мы ответим <br>
+            вам в ближайшее время
+          </p>
+
+          <input class="form__input" type="email" name="почта" placeholder="Укажите почту для связи">
+
+          <textarea name="Вопрос" class="form__input form__textarea"
+            placeholder="Задайте вопрос в свободной форме"></textarea>
+
+          <button type="submit" class="form__btn primary-btn">ОТПРАВИТЬ</button>
+        </form>
+
+        <div class="callback__pic">
+          <img src="./img/callback/callback-pic.png" alt="callback pic">
+        </div>
+      </div>
+
+      <div class="callback__decor">
+        <img src="./img/callback/callback-decor-2.svg" alt="callback decor pic">
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <a class="footer__logo" href="#">
+          <img src="./img/footer/footer-logo.svg" alt="logo">
+        </a>
+
+        <ul class="footer__socials">
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/instagram.svg" alt="instagram">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/vk.svg" alt="vk">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/telegram.svg" alt="telegram">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer__nav">
+        <div class="footer__addresses">
+          <div class="footer__addresses-line"></div>
+          <address class="footer__address">г. Новосибирск, ​ул. Семьи Шамшиных, 64,<br> оф. 515</address>
+
+          <p class="footer__label">Контакты:</p>
+          <a class="footer__link" href="tel:+79137824113">+7 (913) 782-4113</a>
+          <a class="footer__link" href="mailto:trend_school@gmail.com">trend_school@gmail.com</a>
+        </div>
+
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>О школе</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">О нас</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Новости</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Вопросы</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Оплата</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Курсы</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Трикотаж</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Шелк</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Велюр</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Хлопок</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Мастер-классы</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Крой</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Шитье</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Оверлок</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Информация</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Договор оферты</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© Copyright 2023. Trend School все права защищены.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>
