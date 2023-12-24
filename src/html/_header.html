@@ -1,18 +1,60 @@
-<header>
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo"> <a href="#"> #freelance </a> </div>
-                <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Портфолио</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Инфо</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
-                </ul>
-                <div class="burger">
-                    <span></span>
-                </div>
-            </div>
+<header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo___link" href="#">
+            <img src="./img/header/header-logo.svg" alt="logo">
+          </a>
         </div>
-    </nav>
+
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О школе</a></li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Курсы</a>
+
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Трикотаж</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шелк</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Велюр</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Хлопок</a></li>
+            </ul>
+          </li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Мастер-класы</a>
+
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Крой</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шитье</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Оверлок</a></li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__item--logo">
+            <a href="#" class="menu__item-link" data-scroll>
+              <img src="./img/header/header-logo.svg" alt="logo">
+            </a>
+          </li>
+
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Отзывы</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>FAQ</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Записаться</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>

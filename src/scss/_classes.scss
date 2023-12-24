@@ -1,0 +1,81 @@
+.classes {
+
+  // .classes__inner
+
+  &__inner {}
+
+  // .classes__header
+
+  &__header {
+    margin-bottom: 80px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  // .classes__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+
+  // .classes__item
+
+  &__item {
+    position: relative;
+    border-radius: 32px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      background-image: url('../img/classes/hover.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 32px;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    @media (hover: hover) {
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 32px;
+      max-height: 580px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: $breakpoint768) {
+      img {
+        max-height: 380px;
+      }
+    }
+
+  }
+}
