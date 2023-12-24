@@ -1,0 +1,140 @@
+.news {
+  overflow: hidden;
+
+  // .news__inner
+
+  &__inner {}
+
+  // .news__header
+
+  &__header {
+    margin-bottom: 80px;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 40px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // .news__slider
+
+  &__slider {
+    overflow: visible;
+  }
+
+  // .news__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .news__slide
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (max-width: $breakpoint768) {
+      align-items: center;
+    }
+  }
+
+  // .news__slide-pic
+
+  &__slide-pic {
+    height: 320px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+
+    @media (max-width: $breakpoint1450) {
+      height: 280px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 240px;
+    }
+  }
+
+  // .news__slide-title
+
+  &__slide-title {
+    color: #2D2828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 18px;
+    }
+  }
+
+  // .news__slide-descr
+
+  &__slide-descr {
+    color: #2D2828;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  // .news__slider-pagination
+
+  &__slider-pagination {
+    display: none;
+    position: static;
+    margin: 20px auto 0px;
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // .news__btn
+
+  &__btn {
+    margin: 60px auto 0;
+    padding: 18px 100px;
+
+    @media (max-width: $breakpoint992) {
+      padding: 18px 100px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin: 24px auto 0;
+      padding: 18px;
+      width: 100%;
+    }
+  }
+}
+
+.container {}
+
+.section-header {
+
+  // .section-header__picture
+
+  &__picture {}
+
+  // .section-header__title
+
+  &__title {}
+
+  // .section-header__descr
+
+  &__descr {}
+}

@@ -1,0 +1,108 @@
+.callback {
+
+  // .callback__container
+
+  &__container {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  // .callback__inner
+
+  &__inner {
+    display: flex;
+    column-gap: 70px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 20px;
+    }
+
+  }
+
+  // .callback__decor
+
+  &__decor {
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  &__decor:nth-child(1) {
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    @media (max-width: $breakpoint1450) {
+      img {
+        max-width: 80px;
+      }
+    }
+
+
+  }
+
+  &__decor:nth-child(3) {
+    margin-top: 60px;
+
+    @media (max-width: $breakpoint1450) {
+      img {
+        max-width: 80px;
+      }
+    }
+
+
+  }
+
+  // .callback__form-wrapper
+
+  &__form-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 120px 60px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    background-image: url('../img/callback/callback-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $breakpoint1450) {
+      padding: 60px;
+      column-gap: 30px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      padding: 40px 20px;
+    }
+  }
+
+  // .callback__from
+
+  &__from {
+    max-width: 550px;
+  }
+
+  // .callback__pic
+
+  &__pic {
+    margin-top: -180px;
+
+    @media (max-width: $breakpoint1450) {
+      margin-top: 0;
+
+      img {
+        max-width: 100%;
+        max-height: 400px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+}

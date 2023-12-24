@@ -116,6 +116,13 @@
     line-height: 100%;
     text-transform: uppercase;
     color: var(--text-color);
+    transition: color 0.2s linear;
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
   }
 
   &__item-btn {

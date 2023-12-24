@@ -83,3 +83,44 @@ function sublistView() {
 }
 
 sublistView();
+
+
+function newsSlider() {
+  const container = document.querySelector('.news')
+  if (!container) {
+    return null
+  }
+
+  const swiper = new Swiper('.news__slider', {
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    pagination: {
+      el: '.news__slider-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      767: {
+        slidesPerView: 2.5,
+        spaceBetween: 20
+      },
+      // when window width is >= 640px
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: 40
+      }
+    }
+  })
+}
+
+newsSlider();
