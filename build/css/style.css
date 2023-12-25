@@ -161,6 +161,30 @@ h4 {
   line-height: 100%;
 }
 
+body,
+html {
+  min-height: 100vh;
+}
+
+.main__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -1843,6 +1867,89 @@ h4 {
   margin: 0;
 }
 
+.price-course__list {
+  padding-left: 20px;
+}
+
+.price-course__item {
+  list-style: disc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.price-course__question {
+  display: block;
+  margin: 16px auto 0;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.price-course__bottom-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.price-course__bottom-contacts .price-course__phone {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.price-course__bottom-contacts .price-course__socials {
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.price-course__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  row-gap: 10px;
+  padding: 16px 0;
+  margin-bottom: 36px;
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.price-course__price-label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.price-course__price-sum {
+  font-family: var(--secondary-font);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--primary-color);
+}
+
 .question {
   padding-top: 40px;
 }
@@ -2186,6 +2293,112 @@ h4 {
 .youtube__text {
   font-size: 20px;
   line-height: 140%;
+}
+
+.modal__wrapper {
+  min-height: 100vh;
+  padding-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(16, 24, 40, 0.6);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #FFFAEA;
+  margin: auto;
+  width: 96%;
+  max-width: 1000px;
+  border-radius: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-course .price-course__title span {
+  display: inline;
+}
+
+.modal-course .price-course__info {
+  row-gap: 30px;
+  padding: 40px 20px;
+}
+
+.modal-course .price-course__groups {
+  margin-bottom: 30px;
+}
+
+.modal-course .price-course__price {
+  margin-bottom: 24px;
+}
+
+.modal-course .price-course__text {
+  font-size: 14px;
+}
+
+.modal-course .price-course__bottom {
+  row-gap: 16px;
 }
 
 .footer {
@@ -2810,6 +3023,22 @@ h4 {
 
   .price-course__socials {
     margin: 0;
+  }
+
+  .price-course__item {
+    font-size: 14px;
+  }
+
+  .price-course__bottom-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .price-course__price-sum {
+    font-size: 44px;
   }
 
   .question {
@@ -3519,6 +3748,14 @@ h4 {
 
   .price-course__socials {
     margin: 0;
+  }
+
+  .price-course__item {
+    font-size: 12px;
+  }
+
+  .price-course__price-sum {
+    font-size: 34px;
   }
 
   .question__picture {

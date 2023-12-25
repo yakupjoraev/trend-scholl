@@ -290,3 +290,106 @@
     }
   }
 }
+
+.price-course {
+
+  // .price-course__list
+
+  &__list {
+    padding-left: 20px;
+  }
+
+  // .price-course__item
+
+  &__item {
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 12px;
+    }
+  }
+}
+
+.price-course__question {
+  display: block;
+  margin: 16px auto 0;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.price-course__bottom-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .price-course__phone {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+  }
+
+  .price-course__socials {
+    column-gap: 16px;
+  }
+}
+
+.price-course {
+
+  // .price-course__price
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    padding: 16px 0;
+    margin-bottom: 36px;
+    border-top: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+  }
+
+  // .price-course__price-label
+
+  &__price-label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  // .price-course__price-sum
+
+  &__price-sum {
+    font-family: var(--secondary-font);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--primary-color);
+
+    @media (max-width: $breakpoint992) {
+      font-size: 44px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 34px;
+    }
+  }
+}

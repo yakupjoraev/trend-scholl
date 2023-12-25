@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <!-- Header -->
+  <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo___link" href="#">
+            <img src="./img/header/header-logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <ul class="menu">
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Главная</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>О школе</a></li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Курсы</a>
+
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Трикотаж</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шелк</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Велюр</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Хлопок</a></li>
+            </ul>
+          </li>
+          <li class="menu__item" data-menu-item>
+            <a href="#" class="menu__item-link" data-scroll>Мастер-класы</a>
+
+            <button type="button" class="menu__item-btn" data-menu-item-btn>
+              <img src="./img/icons/arrow-up.svg" alt="arrow-up">
+            </button>
+
+            <ul class="menu__sublist" data-menu-item-sublist>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Крой</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Шитье</a></li>
+              <li class="menu__subitem"><a class="menu__subitem-link" href="#">Оверлок</a></li>
+            </ul>
+          </li>
+
+          <li class="menu__item menu__item--logo">
+            <a href="#" class="menu__item-link" data-scroll>
+              <img src="./img/header/header-logo.svg" alt="logo">
+            </a>
+          </li>
+
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Отзывы</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>FAQ</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+          <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Записаться</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- Main Page -->
+  <main>
+    <!-- Modal -->
+<div class="modal__wrapper">
+  <button class="open-modal-btn" data-modal-id="modal1">Open Modal 1</button>
+
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close-modal-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M8.4 16.308L12 12.708L15.6 16.308L16.308 15.6L12.708 12L16.308 8.4L15.6 7.692L12 11.292L8.4 7.692L7.692 8.4L11.292 12L7.692 15.6L8.4 16.308ZM12.003 21C10.759 21 9.589 20.764 8.493 20.292C7.39767 19.8193 6.44467 19.178 5.634 18.368C4.82333 17.5587 4.18167 16.6067 3.709 15.512C3.23633 14.4173 3 13.2477 3 12.003C3 10.759 3.236 9.589 3.708 8.493C4.18067 7.39767 4.822 6.44467 5.632 5.634C6.44133 4.82333 7.39333 4.18167 8.488 3.709C9.58267 3.23633 10.7523 3 11.997 3C13.241 3 14.411 3.236 15.507 3.708C16.6023 4.18067 17.5553 4.822 18.366 5.632C19.1767 6.44133 19.8183 7.39333 20.291 8.488C20.7637 9.58267 21 10.7523 21 11.997C21 13.241 20.764 14.411 20.292 15.507C19.8193 16.6023 19.178 17.5553 18.368 18.366C17.5587 19.1767 16.6067 19.8183 15.512 20.291C14.4173 20.7637 13.2477 21 12.003 21ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z"
+            fill="#101828" />
+        </svg>
+      </span>
+      <div class="modal-course price-course__main">
+        <div class="price-course__picture">
+          <img class="price-course__picture-pic" src="./img/price-course/price-course-pic.png" alt="price-course pic">
+        </div>
+
+        <div class="price-course__info">
+          <div class="price-course__top">
+            <h3 class="price-course__title">
+              Первое занятие в школе<br>
+              TRE<span>N</span>D SCHOOL
+            </h3>
+          </div>
+
+          <div class="price-course__middle">
+            <div class="price-course__groups">
+              <div class="price-course__group">
+                <p class="price-course__group-label">ЧТО БУДЕТ НА ЗАНЯТИИ</p>
+
+                <ul class="price-course__list">
+                  <li class="price-course__item">
+                    Вы своими руками будете кроить
+                  </li>
+                  <li class="price-course__item">
+                    Освоите сметку
+                  </li>
+                  <li class="price-course__item">
+                    Поймете на практике чем отличаются ножницы для бумаги от
+                    раскройных
+                  </li>
+                  <li class="price-course__item">
+                    Будете шить на швейной машинке
+                  </li>
+                  <li class="price-course__item">
+                    Опробуете оверлок
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+
+            <div class="price-course__price">
+              <p class="price-course__price-label">Стоимость урока</p>
+              <p class="price-course__price-sum">590 руб.</p>
+            </div>
+
+            <a class="price-course__btn primary-btn" href="#">Записаться на занятие</a>
+            <a class="price-course__question" href="#">Задать вопрос в WhatsApp </a>
+          </div>
+
+          <div class="price-course__bottom">
+            <p class="price-course__text">
+              Занятие длится 1,5 часа, проходит в группе, с каждым<br>
+              учеником преподаватель работает индивидуально.
+            </p>
+
+            <div class="price-course__bottom-contacts">
+              <a class="price-course__phone" href="tel:+79121234567">+7 (912) 123-45-67</a>
+
+              <ul class="price-course__socials hero__socials">
+                <li class="hero__social">
+                  <a class="hero__social-link" target="_blank" href="#">
+                    <img src="./img/icons/instagram-grey.svg" alt="instagram">
+                  </a>
+                </li>
+
+                <li class="hero__social">
+                  <a class="hero__social-link" target="_blank" href="#">
+                    <img src="./img/icons/vk-grey.svg" alt="vk">
+                  </a>
+                </li>
+
+                <li class="hero__social">
+                  <a class="hero__social-link" target="_blank" href="#">
+                    <img src="./img/icons/telegram-grey.svg" alt="telegram">
+                  </a>
+                </li>
+
+                <li class="hero__social">
+                  <a class="hero__social-link" target="_blank" href="#">
+                    <img src="./img/icons/whatsapp-grey.svg" alt="whatsapp">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <a class="footer__logo" href="#">
+          <img src="./img/footer/footer-logo.svg" alt="logo">
+        </a>
+
+        <ul class="footer__socials">
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/instagram.svg" alt="instagram">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/vk.svg" alt="vk">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/telegram.svg" alt="telegram">
+            </a>
+          </li>
+
+          <li class="footer__social">
+            <a class="footer__social-link" target="_blank" href="#">
+              <img src="./img/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer__nav">
+        <div class="footer__addresses">
+          <div class="footer__addresses-line"></div>
+          <address class="footer__address">г. Новосибирск, ​ул. Семьи Шамшиных, 64,<br> оф. 515</address>
+
+          <p class="footer__label">Контакты:</p>
+          <a class="footer__link" href="tel:+79137824113">+7 (913) 782-4113</a>
+          <a class="footer__link" href="mailto:trend_school@gmail.com">trend_school@gmail.com</a>
+        </div>
+
+        <div class="footer__lists">
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>О школе</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">О нас</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Новости</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Вопросы</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Оплата</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Курсы</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Трикотаж</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Шелк</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Велюр</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Хлопок</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Мастер-классы</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Крой</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Шитье</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Оверлок</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <li class="footer__item-label">
+              <h4>Информация</h4>
+            </li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Договор оферты</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© Copyright 2023. Trend School все права защищены.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>

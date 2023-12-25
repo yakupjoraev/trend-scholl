@@ -45,6 +45,21 @@ h4 {
   line-height: 100%;
 }
 
+body,
+html {
+  min-height: 100vh;
+}
+
+.main__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+}
+
 // Animations
 // Fade
 @keyframes fade {
