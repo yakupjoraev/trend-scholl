@@ -1310,6 +1310,111 @@ h4 {
   height: 130px;
 }
 
+.faq__header {
+  margin-bottom: 60px;
+}
+
+.accordion {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.accordion__item {
+  display: grid;
+  margin-bottom: 20px;
+  min-height: 100px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.accordion__item.active {
+  border-radius: 16px;
+  background-color: var(--blue-color);
+}
+
+.accordion__item.active .accordion__header {
+  background-color: var(--blue-dark);
+  color: var(--white-color);
+}
+
+.accordion__item.active .accordion__header::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M7.31795 8.13342C7.70208 8.49168 8.29792 8.49168 8.68205 8.13342L14.8039 2.42391C15.4678 1.80475 15.0297 0.692608 14.1219 0.692608H1.87814C0.97034 0.692608 0.53221 1.80475 1.19609 2.42391L7.31795 8.13342Z' fill='%23fff'/%3E%3C/svg%3E");
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion__item.active .accordion__content {
+  color: var(--white-color);
+}
+
+.accordion__item.active .accordion__content a {
+  color: var(--white-color);
+}
+
+.accordion__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: var(--white-color);
+  padding: 24px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--blue-dark);
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.accordion__header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 12px;
+  width: 18px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M7.31795 8.13342C7.70208 8.49168 8.29792 8.49168 8.68205 8.13342L14.8039 2.42391C15.4678 1.80475 15.0297 0.692608 14.1219 0.692608H1.87814C0.97034 0.692608 0.53221 1.80475 1.19609 2.42391L7.31795 8.13342Z' fill='%23289017'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.accordion__content {
+  max-height: 0;
+  padding: 0 40px 0 40px;
+  overflow: hidden;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--blue-color);
+  -webkit-transition: max-height 0.2s ease, padding 0.2s ease;
+  -o-transition: max-height 0.2s ease, padding 0.2s ease;
+  transition: max-height 0.2s ease, padding 0.2s ease;
+}
+
+.accordion__content a {
+  color: var(--blue-color);
+}
+
+.accordion__item.active .accordion__content {
+  padding: 0 40px 24px 40px;
+  max-height: 300px;
+}
+
 .footer {
   padding: 92px 0 34px;
   background-color: var(--blue-color);
@@ -1546,6 +1651,18 @@ h4 {
   }
 }
 
+@media (max-width: 1200px) {
+  .accordion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .accordion__item {
+    margin-bottom: 0;
+    min-height: 1px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
@@ -1699,6 +1816,24 @@ h4 {
 
   .form__input {
     padding: 16px;
+  }
+
+  .faq__header {
+    margin-bottom: 40px;
+  }
+
+  .accordion__header {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+
+  .accordion__content {
+    padding: 0 24px;
+    font-size: 14px;
+  }
+
+  .accordion__item.active .accordion__content {
+    padding: 0 24px 24px;
   }
 
   .footer {
@@ -2182,6 +2317,16 @@ h4 {
 
   .form__descr {
     font-size: 16px;
+  }
+
+  .accordion__header {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .accordion__content {
+    font-size: 12px;
+    line-height: 120%;
   }
 
   .footer {

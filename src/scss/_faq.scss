@@ -1,0 +1,20 @@
+.faq {
+
+  // .faq__inner
+
+  &__inner {}
+
+  // .faq__header
+
+  &__header {
+    margin-bottom: 60px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .faq__accordion
+
+  &__accordion {}
+}
