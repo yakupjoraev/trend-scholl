@@ -1,0 +1,188 @@
+.programm {
+
+  // .programm__inner
+
+  &__inner {}
+
+  // .programm__header
+
+  &__header {
+    margin-bottom: 60px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 40px;
+    }
+
+  }
+
+  // .programm__main
+
+  &__main {}
+
+  // .programm__btn
+
+  &__btn {
+    margin: 60px auto 0;
+    padding: 18px 50px;
+
+    @media (max-width: $breakpoint768) {
+      margin: 24px auto 0;
+      padding: 18px;
+      width: 100%;
+    }
+  }
+}
+
+.programm-accardion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  // .programm-accardion__item
+
+  &__item {
+    padding: 40px 80px;
+    border: 1px solid var(--blue-color);
+    border-radius: 24px;
+
+    @media (max-width: $breakpoint992) {
+      padding: 20px 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 10px 30px 10px 20px;
+    }
+
+    &.active {
+      background-color: var(--blue-color);
+      color: var(--white-color);
+
+      a {
+        color: var(--white-color);
+      }
+
+      .programm-accardion__label {
+        color: var(--white-color);
+      }
+
+      .programm-accardion__icon svg path {
+        fill: var(--white-color);
+      }
+
+      .programm-accardion__header::before {
+        transform: translateY(-50%) rotate(180deg);
+        filter: invert(1);
+      }
+
+      .programm-accardion__content {
+        padding-top: 20px;
+        max-height: 400px;
+        user-select: auto;
+        pointer-events: visible;
+      }
+    }
+  }
+
+  // .programm-accardion__header
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      background-image: url('../img/icons/accardion-arrow.svg');
+      background-repeat: no-repeat;
+      transition: 0.2s linear;
+    }
+
+    @media (max-width: $breakpoint992) {
+      column-gap: 24px;
+
+      &::before {
+        right: -30px;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      column-gap: 16px;
+
+      &::before {
+        right: -20px;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+      }
+    }
+  }
+
+  // .programm-accardion__icon
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: $breakpoint992) {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+    }
+  }
+
+  // .programm-accardion__label
+
+  &__label {
+    font-size: 32px;
+    color: #8f8f8f;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 18px;
+    }
+  }
+
+  // .programm-accardion__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-height: 0;
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    a {
+      color: var(--text-color);
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+    }
+  }
+}

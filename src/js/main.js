@@ -170,3 +170,56 @@ function faqAccardions() {
 
 
 faqAccardions();
+
+document.addEventListener('DOMContentLoaded', function () {
+  var customStopVideo = () => {
+    var iframe = document.querySelectorAll('iframe');
+    Array.prototype.forEach.call(iframe, (iframe) => {
+      iframe.contentWindow.postMessage(
+        JSON.stringify({
+          event: 'command',
+          func: 'stopVideo',
+        }),
+        '*'
+      );
+    });
+  };
+
+  var loadVideo = (element) => {
+    var iframeSrc = element.getAttribute('data-iframe-src');
+    var iframe = document.createElement('iframe');
+    iframe.width = '560';
+    iframe.height = '315';
+    iframe.src = iframeSrc;
+    iframe.title = 'YouTube video player';
+    iframe.frameBorder = '0';
+    iframe.allow =
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+
+    // Replace the image with the iframe
+    element.parentNode.replaceChild(iframe, element);
+
+    // Add a click event listener to stop the video when clicked
+    iframe.addEventListener('click', customStopVideo);
+  };
+
+  // document.querySelector('.close-modal-btn').onclick = function () {
+  //   customStopVideo();
+  // };
+
+  document.addEventListener('click', function (event) {
+    var modal = document.querySelector('.modal');
+    if (event.target !== modal && !modal.contains(event.target)) {
+      customStopVideo();
+    }
+  });
+
+  // Add a click event listener to load the video on image click
+  document.addEventListener('click', function (event) {
+    if (event.target.hasAttribute('data-video-pic')) {
+      loadVideo(event.target);
+    }
+  });
+});
+

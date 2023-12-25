@@ -206,7 +206,7 @@ h4 {
 }
 
 .section-header__title {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   font-size: 52px;
   text-align: center;
   line-height: 100%;
@@ -1610,6 +1610,584 @@ h4 {
   border-radius: 24px;
 }
 
+.course__header {
+  margin-bottom: 80px;
+}
+
+.course__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.course__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 554px;
+          flex: 0 1 554px;
+}
+
+.course__descr {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.course__descr:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.course__info-block {
+  margin-bottom: 24px;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--blue-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.course__info-block span {
+  color: var(--primary-color);
+}
+
+.course__picture {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 620px;
+          flex: 0 1 620px;
+}
+
+.course__picture::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 52px);
+  height: calc(100% - 52px);
+  border: 1px solid var(--white-color);
+  border-radius: 24px;
+}
+
+.course__picture img {
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+.price-course {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.price-course__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+}
+
+.price-course__decor:nth-child(1) {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.price-course__decor:nth-child(3) {
+  margin-top: 60px;
+}
+
+.price-course__main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 966px;
+          flex: 0 1 966px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 24px;
+}
+
+.price-course__picture {
+  background-image: url("../img/price-course/price-course-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px 0 0 24px;
+}
+
+.price-course__picture-pic {
+  display: block;
+  margin-top: -100px;
+  margin-left: -150px;
+}
+
+.price-course__info {
+  display: grid;
+  row-gap: 40px;
+  padding: 60px 30px 60px 40px;
+  border-top: 1px solid var(--blue-color);
+  border-right: 1px solid var(--blue-color);
+  border-bottom: 1px solid var(--blue-color);
+  border-radius: 0 24px 24px 0;
+}
+
+.price-course__title {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 36px;
+}
+
+.price-course__title span {
+  display: block;
+  margin: 10px auto 0;
+  color: var(--primary-color);
+}
+
+.price-course__sub {
+  color: #A6A6A6;
+  text-align: center;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.price-course__groups {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 14px;
+  padding-left: 18px;
+  margin-bottom: 40px;
+}
+
+.price-course__groups::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.price-course__group-label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+  color: var(--blue-color);
+}
+
+.price-course__group-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.price-course__btn {
+  width: 100%;
+}
+
+.price-course__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+}
+
+.price-course__bottom-border {
+  width: 100px;
+  height: 1px;
+  background-color: #B3B3B3;
+  margin: 0 auto;
+}
+
+.price-course__text {
+  color: #A6A6A6;
+  text-align: center;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.price-course__phone {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  color: var(--blue-color);
+}
+
+.price-course__socials {
+  margin: 0;
+}
+
+.question {
+  padding-top: 40px;
+}
+
+.question__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  max-width: 1260px;
+  padding: 40px 20px 0 20px;
+  margin: 0 auto;
+  background-image: url("../img/question/question-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.question__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -160px;
+  margin-left: -60px;
+}
+
+.question__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+  padding: 24px 54px 54px 0;
+}
+
+.question__title {
+  font-size: 48px;
+}
+
+.question__descr {
+  max-width: 504px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.question__naming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.question__name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.question__status {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.question__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.question__link {
+  padding: 14px;
+  width: 100%;
+  -webkit-column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
+  white-space: nowrap;
+}
+
+.question__link--telegram {
+  border: 2px solid #008EE9;
+  color: #008EE9;
+}
+
+.question__link--whatsapp {
+  border-width: 2px;
+}
+
+.programm__header {
+  margin-bottom: 60px;
+}
+
+.programm__btn {
+  margin: 60px auto 0;
+  padding: 18px 50px;
+}
+
+.programm-accardion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.programm-accardion__item {
+  padding: 40px 80px;
+  border: 1px solid var(--blue-color);
+  border-radius: 24px;
+}
+
+.programm-accardion__item.active {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.programm-accardion__item.active a {
+  color: var(--white-color);
+}
+
+.programm-accardion__item.active .programm-accardion__label {
+  color: var(--white-color);
+}
+
+.programm-accardion__item.active .programm-accardion__icon svg path {
+  fill: var(--white-color);
+}
+
+.programm-accardion__item.active .programm-accardion__header::before {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.programm-accardion__item.active .programm-accardion__content {
+  padding-top: 20px;
+  max-height: 400px;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  pointer-events: visible;
+}
+
+.programm-accardion__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+  cursor: pointer;
+}
+
+.programm-accardion__header::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/icons/accardion-arrow.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.programm-accardion__icon {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+}
+
+.programm-accardion__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.programm-accardion__label {
+  font-size: 32px;
+  color: #8f8f8f;
+}
+
+.programm-accardion__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+  max-height: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.programm-accardion__content a {
+  color: var(--text-color);
+}
+
+.youtube__header {
+  margin-bottom: 60px;
+}
+
+.youtube__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 64px;
+     -moz-column-gap: 64px;
+          column-gap: 64px;
+}
+
+.youtube__video {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 720px;
+          flex: 0 1 720px;
+  min-height: 485px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 16px;
+  background-image: url("../img/youtube/youtube-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.youtube__video::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 52px);
+  height: calc(100% - 52px);
+  border: 1px solid var(--white-color);
+  border-radius: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.youtube__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.youtube__video-pic {
+  cursor: pointer;
+}
+
+.youtube__video-info {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--white-color);
+}
+
+.youtube__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 676px;
+          flex: 0 1 676px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.youtube__label {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.youtube__text {
+  font-size: 20px;
+  line-height: 140%;
+}
+
 .footer {
   padding: 92px 0 34px;
   background-color: var(--blue-color);
@@ -1847,6 +2425,70 @@ h4 {
 
   .camfort__title {
     font-size: 48px;
+  }
+
+  .price-course {
+    padding-top: 0;
+  }
+
+  .price-course__inner {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .price-course__decor:nth-child(1) img {
+    max-width: 80px;
+  }
+
+  .price-course__decor:nth-child(3) img {
+    max-width: 80px;
+  }
+
+  .price-course__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .price-course__picture-pic {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .price-course__info {
+    padding: 40px 20px;
+  }
+
+  .question__inner {
+    max-width: 1000px;
+  }
+
+  .question__picture {
+    margin-top: -100px;
+  }
+
+  .question__picture img {
+    max-width: 100%;
+  }
+
+  .question__info {
+    row-gap: 30px;
+  }
+
+  .question__title {
+    font-size: 36px;
+  }
+
+  .question__descr {
+    font-size: 18px;
   }
 
   .footer__nav {
@@ -2107,6 +2749,157 @@ h4 {
 
   .class-city__header .section-header__title {
     margin-bottom: 10px;
+  }
+
+  .course__header {
+    margin-bottom: 60px;
+  }
+
+  .course__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .course__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .course__descr {
+    font-size: 14px;
+  }
+
+  .course__descr:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .course__info-block {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .course__picture {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    max-height: 400px;
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .course__picture img {
+    width: 100%;
+  }
+
+  .price-course__decor {
+    display: none;
+  }
+
+  .price-course__title {
+    font-size: 28px;
+  }
+
+  .price-course__socials {
+    margin: 0;
+  }
+
+  .question {
+    padding: 0;
+  }
+
+  .question__inner {
+    padding: 0;
+  }
+
+  .question__picture {
+    margin-top: auto;
+    margin-left: 0;
+  }
+
+  .question__info {
+    row-gap: 24px;
+  }
+
+  .question__info {
+    padding: 24px;
+  }
+
+  .question__title {
+    font-size: 26px;
+  }
+
+  .question__descr {
+    font-size: 16px;
+  }
+
+  .question__status {
+    font-size: 14px;
+  }
+
+  .question__links {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+
+  .programm__header {
+    margin-bottom: 40px;
+  }
+
+  .programm-accardion__item {
+    padding: 20px 40px;
+  }
+
+  .programm-accardion__header {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+
+  .programm-accardion__header::before {
+    right: -30px;
+  }
+
+  .programm-accardion__icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .programm-accardion__label {
+    font-size: 24px;
+  }
+
+  .youtube__header {
+    margin-bottom: 40px;
+  }
+
+  .youtube__main {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+
+  .youtube__video {
+    min-height: 380px;
+  }
+
+  .youtube__label {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .youtube__text {
+    font-size: 16px;
+    line-height: 120%;
   }
 
   .footer {
@@ -2677,6 +3470,146 @@ h4 {
     line-height: 120%;
   }
 
+  .course__header {
+    margin-bottom: 40px;
+  }
+
+  .price-course__main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .price-course__picture {
+    display: none;
+  }
+
+  .price-course__info {
+    border: 1px solid var(--blue-color);
+    border-radius: 24px;
+    row-gap: 20px;
+  }
+
+  .price-course__title {
+    font-size: 24px;
+  }
+
+  .price-course__sub {
+    font-size: 16px;
+  }
+
+  .price-course__group-text {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .price-course__bottom {
+    row-gap: 20px;
+  }
+
+  .price-course__text {
+    font-size: 16px;
+  }
+
+  .price-course__text br {
+    display: none;
+  }
+
+  .price-course__phone {
+    font-size: 24px;
+  }
+
+  .price-course__socials {
+    margin: 0;
+  }
+
+  .question__picture {
+    display: none;
+  }
+
+  .programm__btn {
+    margin: 24px auto 0;
+    padding: 18px;
+    width: 100%;
+  }
+
+  .programm-accardion__item {
+    padding: 10px 30px 10px 20px;
+  }
+
+  .programm-accardion__header {
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+
+  .programm-accardion__header::before {
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  .programm-accardion__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .programm-accardion__label {
+    font-size: 18px;
+  }
+
+  .programm-accardion__content {
+    font-size: 14px;
+  }
+
+  .youtube__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .youtube__video {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .youtube__video-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .youtube__video-info {
+    font-size: 18px;
+  }
+
+  .youtube__video-info {
+    font-size: 14px;
+  }
+
+  .youtube__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    row-gap: 16px;
+  }
+
+  .youtube__label {
+    font-size: 18px;
+  }
+
+  .youtube__text {
+    font-size: 14px;
+  }
+
+  .youtube__btn {
+    width: 100%;
+  }
+
   .footer {
     padding: 40px 0;
   }
@@ -2777,6 +3710,30 @@ h4 {
 
   .practic__item-link:hover {
     color: var(--white-color);
+  }
+
+  .price-course__phone:hover {
+    color: var(--primary-color);
+  }
+
+  .question__link--telegram:hover {
+    background-color: #008EE9;
+    border: 2px solid #008EE9;
+    color: var(--white-color);
+  }
+
+  .question__link--telegram:hover svg path {
+    fill: var(--white-color);
+  }
+
+  .question__link--whatsapp:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--white-color);
+  }
+
+  .question__link--whatsapp:hover svg path {
+    fill: var(--white-color);
   }
 
   .footer__social-link:hover img {

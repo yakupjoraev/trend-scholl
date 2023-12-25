@@ -1,0 +1,292 @@
+.price-course {
+  padding-top: 40px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint1450) {
+    padding-top: 0;
+  }
+
+  // .price-course__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+
+    @media (max-width: $breakpoint1450) {
+      column-gap: 20px;
+    }
+  }
+
+  // .price-course__decor
+
+  &__decor {
+    @media (max-width: $breakpoint992) {
+      display: none;
+    }
+  }
+
+
+  &__decor:nth-child(1) {
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    @media (max-width: $breakpoint1450) {
+      img {
+        max-width: 80px;
+      }
+    }
+
+
+  }
+
+  &__decor:nth-child(3) {
+    margin-top: 60px;
+
+    @media (max-width: $breakpoint1450) {
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+
+
+  // .price-course__main
+
+  &__main {
+    flex: 0 1 966px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 24px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .price-course__picture
+
+  &__picture {
+    background-image: url('../img/price-course/price-course-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px 0 0 24px;
+
+    @media (max-width: $breakpoint1450) {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  // .price-course__picture-pic
+
+  &__picture-pic {
+    display: block;
+    // max-width: 100%;
+    margin-top: -100px;
+    margin-left: -150px;
+
+    @media (max-width: $breakpoint1450) {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  // .price-course__info
+
+  &__info {
+    display: grid;
+    row-gap: 40px;
+    padding: 60px 30px 60px 40px;
+    border-top: 1px solid var(--blue-color);
+    border-right: 1px solid var(--blue-color);
+    border-bottom: 1px solid var(--blue-color);
+    border-radius: 0 24px 24px 0;
+
+    @media (max-width: $breakpoint1450) {
+      padding: 40px 20px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      border: 1px solid var(--blue-color);
+      border-radius: 24px;
+      row-gap: 20px;
+    }
+  }
+
+  // .price-course__top
+
+  &__top {}
+
+  // .price-course__title
+
+  &__title {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 36px;
+
+    span {
+      display: block;
+      margin: 10px auto 0;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .price-course__sub
+
+  &__sub {
+    color: #A6A6A6;
+    text-align: center;
+    font-size: 20px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .price-course__middle
+
+  &__middle {}
+
+  // .price-course__groups
+
+  &__groups {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    padding-left: 18px;
+    margin-bottom: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 2px;
+      background-color: var(--primary-color);
+    }
+  }
+
+  // .price-course__group
+
+  &__group {}
+
+  // .price-course__group-label
+
+  &__group-label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+    color: var(--blue-color);
+  }
+
+  // .price-course__group-text
+
+  &__group-text {
+    font-size: 16px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+      line-height: 120%;
+    }
+  }
+
+  // .price-course__btn
+
+  &__btn {
+    width: 100%;
+  }
+
+  // .price-course__bottom
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 20px;
+    }
+  }
+
+  // .price-course__bottom-border
+
+  &__bottom-border {
+    width: 100px;
+    height: 1px;
+    background-color: #B3B3B3;
+    margin: 0 auto;
+  }
+
+  // .price-course__text
+
+  &__text {
+    color: #A6A6A6;
+    text-align: center;
+    font-size: 18px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // .price-course__phone
+
+  &__phone {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: var(--blue-color);
+
+    @media (hover: hover) {
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .price-course__socials
+
+  &__socials {
+    margin: 0;
+
+    @media (max-width: $breakpoint992) {
+      margin: 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin: 0;
+    }
+  }
+}
