@@ -1415,6 +1415,201 @@ h4 {
   max-height: 300px;
 }
 
+.free-course__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  row-gap: 48px;
+}
+
+.free-course__title {
+  font-family: var(--secondary-font);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.free-course__subtitle {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.free-course__subtitle span {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.free-course__descr {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.camfort__main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+  background-image: url("../img/camfort/camfort-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.camfort__title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.camfort__descr {
+  margin-bottom: 44px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.camfort__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.camfort__item {
+  display: grid;
+  justify-items: center;
+  row-gap: 32px;
+  text-align: center;
+}
+
+.camfort__item img {
+  width: 75px;
+  height: 75px;
+}
+
+.camfort__item p {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.class-city__header {
+  margin-bottom: 60px;
+}
+
+.class-city__header .section-header__title {
+  margin-bottom: 20px;
+}
+
+.class-city__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.class-city__list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 576px;
+          flex: 0 1 576px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+
+.class-city__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.class-city__item-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  border: 2px solid var(--blue-color);
+}
+
+.class-city__item-pic img {
+  width: 60px;
+  height: 60px;
+}
+
+.class-city__item-text {
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.class-city__picture {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 842px;
+          flex: 0 1 842px;
+}
+
+.class-city__picture::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 52px);
+  height: calc(100% - 52px);
+  border: 1px solid var(--white-color);
+  border-radius: 24px;
+}
+
+.class-city__picture img {
+  max-width: 100%;
+  border-radius: 24px;
+}
+
 .footer {
   padding: 92px 0 34px;
   background-color: var(--blue-color);
@@ -1638,6 +1833,22 @@ h4 {
     font-size: 40px;
   }
 
+  .free-course__title {
+    font-size: 54px;
+  }
+
+  .free-course__subtitle {
+    font-size: 30px;
+  }
+
+  .camfort__main {
+    padding: 60px;
+  }
+
+  .camfort__title {
+    font-size: 48px;
+  }
+
   .footer__nav {
     -webkit-column-gap: 48px;
        -moz-column-gap: 48px;
@@ -1660,6 +1871,26 @@ h4 {
   .accordion__item {
     margin-bottom: 0;
     min-height: 1px;
+  }
+
+  .class-city__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .class-city__list {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .class-city__picture {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -1834,6 +2065,48 @@ h4 {
 
   .accordion__item.active .accordion__content {
     padding: 0 24px 24px;
+  }
+
+  .free-course__inner {
+    row-gap: 30px;
+  }
+
+  .free-course__title {
+    font-size: 44px;
+  }
+
+  .free-course__subtitle {
+    font-size: 24px;
+  }
+
+  .free-course__descr {
+    font-size: 18px;
+  }
+
+  .camfort__main {
+    padding: 40px 20px;
+  }
+
+  .camfort__title {
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+
+  .camfort__descr {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .camfort__item p {
+    font-size: 16px;
+  }
+
+  .class-city__header {
+    margin-bottom: 40px;
+  }
+
+  .class-city__header .section-header__title {
+    margin-bottom: 10px;
   }
 
   .footer {
@@ -2046,6 +2319,10 @@ h4 {
 
   .section {
     margin: 40px 0;
+  }
+
+  .section-header br {
+    display: none;
   }
 
   .section-header__picture img {
@@ -2326,6 +2603,77 @@ h4 {
 
   .accordion__content {
     font-size: 12px;
+    line-height: 120%;
+  }
+
+  .free-course__inner {
+    row-gap: 20px;
+  }
+
+  .free-course__inner br {
+    display: none;
+  }
+
+  .free-course__title {
+    font-size: 34px;
+  }
+
+  .free-course__subtitle {
+    font-size: 20px;
+  }
+
+  .free-course__descr {
+    font-size: 16px;
+  }
+
+  .camfort__main {
+    padding: 20px;
+  }
+
+  .camfort__main br {
+    display: none;
+  }
+
+  .camfort__title {
+    font-size: 24px;
+  }
+
+  .camfort__descr {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .camfort__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .camfort__item {
+    row-gap: 16px;
+  }
+
+  .camfort__item p {
+    font-size: 14px;
+  }
+
+  .class-city__item {
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+
+  .class-city__item-pic {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+
+  .class-city__item-pic img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .class-city__item-text {
+    font-size: 16px;
     line-height: 120%;
   }
 

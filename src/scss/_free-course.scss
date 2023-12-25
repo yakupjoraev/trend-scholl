@@ -1,0 +1,96 @@
+.section {}
+
+.free-course {
+
+  // .free-course__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 48px;
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 20px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // .free-course__logo
+
+  &__logo {}
+
+  // .free-course__title
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 54px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 44px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 34px;
+    }
+  }
+
+  // .free-course__subtitle
+
+  &__subtitle {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+
+    span {
+      font-weight: 900;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+    }
+  }
+
+  // .free-course__descr
+
+  &__descr {
+    font-size: 20px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .free-course__btn
+
+  &__btn {}
+}

@@ -1,0 +1,131 @@
+.class-city {
+
+  // .class-city__inner
+
+  &__inner {}
+
+  // .class-city__header
+
+  &__header {
+    margin-bottom: 60px;
+
+    .section-header__title {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 40px;
+
+      .section-header__title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  // .class-city__main
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+
+  // .class-city__list
+
+  &__list {
+    flex: 0 1 576px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media (max-width: 1200px) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .class-city__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+    @media (max-width: $breakpoint768) {
+      column-gap: 16px;
+    }
+  }
+
+  // .class-city__item-pic
+
+  &__item-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    border: 2px solid var(--blue-color);
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  // .class-city__item-text
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 140%;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    flex: 0 1 842px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 52px);
+      height: calc(100% - 52px);
+      border: 1px solid var(--white-color);
+      border-radius: 24px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 24px;
+    }
+
+    @media (max-width: 1200px) {
+      flex: 0 1 auto;
+    }
+  }
+}
