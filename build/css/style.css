@@ -2550,6 +2550,37 @@ main {
   line-height: 140%;
 }
 
+.footer__scroll {
+  position: sticky;
+  bottom: 50px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.footer__scroll svg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
 @media (max-width: 1449.98px) {
   .menu__item--logo img {
     max-width: 140px;
@@ -3985,5 +4016,14 @@ main {
 
   .footer__item-link:hover {
     color: var(--primary-color);
+  }
+
+  .footer__scroll:hover svg path {
+    fill: var(--white-color);
+  }
+
+  .footer__scroll:hover svg rect {
+    stroke: var(--white-color);
+    fill: var(--primary-color);
   }
 }

@@ -211,6 +211,66 @@ function modal() {
 
 modal();
 
+//плавный скролл
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollButton = document.querySelector('[data-scroll-to-top]');
+
+  // Показываем или скрываем кнопку в зависимости от положения скролла
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 200) {
+      scrollButton.style.display = 'block';
+    } else {
+      scrollButton.style.display = 'none';
+    }
+  });
+
+  // Обработчик события клика на кнопку
+  scrollButton.addEventListener('click', function () {
+    scrollToTop(1000); // 1000 миллисекунд (1 секунда) для прокрутки
+  });
+
+  // Функция для плавной прокрутки
+  function scrollToTop(duration) {
+    var start = window.pageYOffset;
+    var startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+    function scroll() {
+      var currentTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+      var timeElapsed = currentTime - startTime;
+      var run = easeInOutQuad(timeElapsed, start, -start, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scroll);
+      }
+    }
+
+    // Функция сглаживания движения (ease in-out quad)
+    function easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(scroll);
+  }
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var customStopVideo = () => {
     var iframe = document.querySelectorAll('iframe');
@@ -248,12 +308,12 @@ document.addEventListener('DOMContentLoaded', function () {
   //   customStopVideo();
   // };
 
-  document.addEventListener('click', function (event) {
-    var modal = document.querySelector('.modal');
-    if (event.target !== modal && !modal.contains(event.target)) {
-      customStopVideo();
-    }
-  });
+  // document.addEventListener('click', function (event) {
+  //   var modal = document.querySelector('.modal');
+  //   if (event.target !== modal && !modal.contains(event.target)) {
+  //     customStopVideo();
+  //   }
+  // });
 
   // Add a click event listener to load the video on image click
   document.addEventListener('click', function (event) {
